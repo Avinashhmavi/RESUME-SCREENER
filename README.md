@@ -2,6 +2,13 @@
 
 Welcome to **AI Resume & Job Matcher**, a powerful tool designed to help job seekers analyze how well their resume aligns with a specific job description. Using advanced AI models and natural language processing (NLP), this app provides detailed insights, actionable recommendations, and a match score to enhance your chances of landing your dream job!
 
+
+# Resume Screener App  
+
+This project includes a **Resume Screener** tool. You can access the live application here:  
+
+[👉 Click Here to Open Resume Screener](https://resume-screener-ifim.streamlit.app/)  
+
 ---
 
 ## 🌟 Features
