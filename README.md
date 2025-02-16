@@ -41,7 +41,7 @@ Before running the app, ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ai-resume-job-matcher.git
+   git clone https://github.com/Avinashhmavi/RESUME-SCREENER.git
    cd ai-resume-job-matcher
    ```
 
