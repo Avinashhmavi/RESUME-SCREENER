@@ -7,11 +7,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import requests
 import numpy as np
-from sentence_transformers import SentenceTransformer, util
+import torch
+from sentence_transformers import SentenceTransformer
 
-# Load SentenceTransformer model for local fallback
-model = SentenceTransformer('all-MiniLM-L6-v2', device='mps')  # 'mps' for Mac M1/M2 GPU
+device = "cpu"  # Force CPU mode for compatibility
+model = SentenceTransformer('all-MiniLM-L6-v2', device=device)
 
+print("✅ Using CPU mode (Streamlit Cloud safe)")
 # 🔹 Replace with your actual API Keys
 import streamlit as st
 import requests
