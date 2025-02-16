@@ -13,14 +13,18 @@ from sentence_transformers import SentenceTransformer, util
 model = SentenceTransformer('all-MiniLM-L6-v2', device='mps')  # 'mps' for Mac M1/M2 GPU
 
 # 🔹 Replace with your actual API Keys
-GROQ_API_KEY = "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"
-GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"  # ✅ Fixed URL
+import streamlit as st
+import requests
 
-OPENROUTER_API_KEY = "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"
-OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
+# ✅ Get API keys securely from Streamlit secrets
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+GROQ_API_URL = st.secrets["GROQ_API_URL"]
 
-HF_API_KEY = "yhf_ceusBQxwYwVBSGHAuGNdQOCmvGmHoVMIuV"
-HF_API_URL = "https://api-inference.huggingface.co/models/google/gemini-1.5-pro"
+OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
+OPENROUTER_API_URL = st.secrets["OPENROUTER_API_URL"]
+
+HF_API_KEY = st.secrets["HF_API_KEY"]
+HF_API_URL = st.secrets["HF_API_URL"]
 
 MODEL_NAME = "mixtral-8x7b-32768"  # Default Groq model
 
