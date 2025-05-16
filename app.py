@@ -28,7 +28,7 @@ OPENROUTER_API_URL = st.secrets["OPENROUTER_API_URL"]
 HF_API_KEY = st.secrets["HF_API_KEY"]
 HF_API_URL = st.secrets["HF_API_URL"]
 
-MODEL_NAME = "mixtral-8x7b-32768"  # Default Groq model
+MODEL_NAME = "llama3-70b-8192"  # Default Groq model
 
 def extract_text_from_pdf(uploaded_file):
     """Extracts and cleans text from an uploaded PDF resume."""
